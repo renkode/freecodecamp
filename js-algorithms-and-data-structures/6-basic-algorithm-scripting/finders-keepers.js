@@ -1,0 +1,9 @@
+function findElement(arr, func) {
+  // do a forEach and pass in func? no
+  for (let i = 0; i < arr.length; i++) {
+    if (func(arr[i])) return arr[i];
+  }
+  return undefined;
+}
+
+console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
